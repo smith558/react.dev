@@ -657,9 +657,7 @@ export default function TabButton({ action, children, isActive }) {
   if (isActive) {
     return <b>{children}</b>
   }
-  if (isPending) {
-    return <b className="pending">{children}</b>;
-  }
+
   return (
     <button onClick={async () => {
       startTransition(async () => {
